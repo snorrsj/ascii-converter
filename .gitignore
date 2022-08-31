@@ -129,5 +129,4 @@ dmypy.json
 .pyre/
 
 
-demofile-decode.txt
-demofile-encode.txt
+/testing

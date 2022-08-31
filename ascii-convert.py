@@ -42,16 +42,10 @@ def encode_ascii(text_file):
     ascii_list = []
 
     f = open(text_file)
-    for obj in f.read():
-        if obj != ' ':
-            temp_list.append(str(ord(obj)) + ' ')
-        else:
-            for x in temp_list:
-                ascii_list.append(x)
-            
-            temp_list = []
+    for obj in f.read(): 
+        temp_list.append(str(ord(obj)) + ' ')
 
-    return ''.join(ascii_list)
+    return ''.join(temp_list)
 
 
 def main():
